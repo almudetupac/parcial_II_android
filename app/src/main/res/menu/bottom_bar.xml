@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/manualFragment"
+        android:icon="@drawable/consola"
+        android:title="Manual"
+
+        />
+    <item
+        android:id="@+id/puestasFragment"
+        android:icon="@drawable/icons8_alternar_encendido_48"
+        android:title="Escenas"
+         />
+
+</menu>

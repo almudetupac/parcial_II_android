@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Consola_DMX</string>
+    <string name="togglebutton">ToggleButton</string>
+    <string name="Titulo_Page">Paginas</string>
+    <string name="Titulo_Fader">Chanels</string>
+    <string name="Off">OFF</string>
+    <string name="ON">ON</string>
+    <string name="txt_Essena">Escena :</string>
+    <string name="txt_TEscena">Escena:</string>
+    <string name="txt_Escena">MyEscena</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="T_Nescena">Nueva Escena</string>
+    <string name="T_borrar">Borrar</string>
+    <string name="D_borrar">¿Esta seguro que desea eliminar?</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Sincronización</string>
+    <string name="sync_header">Sincronización</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="t_sinc">Tiempo de sincronizacion</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Online</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Sincronizando fader con el contolador</string>
+    <string name="attachment_summary_off">Sincronizacion deshabilitada</string>
+    <string name="settings">Settings</string>
+    <string name="conectar">Conectar</string>
+    <string name="C_bluetooth">Conectando bluetooth...</string>
+    <string name="conectar">Conectar</string>
+    <string name="atras">Atras</string>
+    <string name="borrar">Borrar</string>
+    <string name="atras">Atras</string>
+    <string name="borrar">Borrar</string>
+</resources>

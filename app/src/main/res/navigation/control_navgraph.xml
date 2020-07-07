@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/control_navgraph"
+    app:startDestination="@id/manualFragment">
+
+
+        <fragment
+        android:id="@+id/manualFragment"
+        android:name="com.utn.consola_dmx.Fragments.ManualFragment"
+        android:label="manual_fragment"
+        tools:layout="@layout/manual_fragment" >
+        <action
+            android:id="@+id/action_manualFragment_to_conexionFragment"
+            app:destination="@id/conexionFragment" />
+            <action
+                android:id="@+id/action_manualFragment_to_puestasFragment"
+                app:destination="@id/puestasFragment" />
+            <action
+                android:id="@+id/action_manualFragment_to_guardarFragment"
+                app:destination="@id/guardarFragment" />
+            <action
+                android:id="@+id/action_manualFragment_to_settingsActivity"
+                app:destination="@id/settingsActivity" />
+        </fragment>
+    <fragment
+        android:id="@+id/pageFragment2"
+        android:name="com.utn.consola_dmx.Fragments.PageFragment"
+        android:label="page_fragment"
+        tools:layout="@layout/page_fragment" />
+    <fragment
+        android:id="@+id/faderFragment2"
+        android:name="com.utn.consola_dmx.Fragments.FaderFragment"
+        android:label="fader_fragment"
+        tools:layout="@layout/fader_fragment" />
+    <fragment
+        android:id="@+id/puestasFragment"
+        android:name="com.utn.consola_dmx.Fragments.PuestasFragment"
+        android:label="puestas_fragment"
+        tools:layout="@layout/puestas_fragment" >
+        <action
+            android:id="@+id/action_puestasFragment_to_conexionFragment"
+            app:destination="@id/conexionFragment" />
+        <action
+            android:id="@+id/action_puestasFragment_to_manualFragment"
+            app:destination="@id/manualFragment" />
+        <action
+            android:id="@+id/action_puestasFragment_to_borrarFragment"
+            app:destination="@id/borrarFragment" />
+        <action
+            android:id="@+id/action_puestasFragment_to_settingsActivity"
+            app:destination="@id/settingsActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/conexionFragment"
+        android:name="com.utn.consola_dmx.Fragments.ConexionFragment"
+        android:label="conexion_fragment"
+        tools:layout="@layout/conexion_fragment" >
+        <action
+            android:id="@+id/action_conexionFragment_to_puestasFragment"
+            app:destination="@id/puestasFragment" />
+        <action
+            android:id="@+id/action_conexionFragment_to_manualFragment"
+            app:destination="@id/manualFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/guardarFragment"
+        android:name="com.utn.consola_dmx.dialogs.GuardarFragment"
+        android:label="GuardarFragment"
+        tools:layout="@layout/fragment_guardar"/>
+    <dialog
+        android:id="@+id/borrarFragment"
+        android:name="com.utn.consola_dmx.dialogs.BorrarFragment"
+        android:label="BorrarFragment"
+        tools:layout="@layout/fragment_borrar" />
+    <activity
+        android:id="@+id/settingsActivity"
+        android:name="com.utn.consola_dmx.Activitys.SettingsActivity"
+        android:label="SettingsActivity" />
+</navigation>
